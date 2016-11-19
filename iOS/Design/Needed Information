@@ -1,0 +1,38 @@
+Workout:
+    Exercises: (List of exercises)
+        Exercise1: (Lift)
+            sets needed:
+            reps for each set:
+        Exercise2: (Cardio)
+            target duration:
+            target distance:
+        Exercise3: (Stretch)
+            target duration:
+Exercise
+    name:
+    type: (Cardio, Lift, Stretch)
+    sets: (list of sets)
+    duration:
+    distance:
+
+
+    sets needed:
+    sets performed:
+    reps needed:
+    reps performed:
+    target duration:
+    duration performed:
+    target distance:
+    distance performed:
+    
+Session: (A completed Workout)
+    workout name:
+    completion date:
+    exercises:(list of completed exercises)
+
+User Info
+    username
+Past Workouts: (List of workouts)
+Set:
+    reps:
+    weight:

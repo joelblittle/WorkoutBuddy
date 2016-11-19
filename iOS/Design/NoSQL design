@@ -1,0 +1,80 @@
+{
+    "users": {
+        "userId": {
+            "email": "string",
+            "registration-date": "time since 1970"
+        }
+    },
+    
+    "workouts": {
+        "user-id": {
+            "workoutName": {
+                "numSessions":2,// Nullable
+                "sessions": {
+                    "sessionId1":"id",
+                    "sessionId2":"id"
+                },
+                "exercises":{
+                    "exerciseName1": {
+                        "order":1, // required
+                        "type":"string",
+                        "setsNeeded":3,// Nullable
+                        "repsNeeded":2,// Nullable
+                        "targetDuration":"hh:mm:ss",// Nullable
+                        "targetDistance":"1.45"// Nullable [miles]
+                    }
+                }
+            }
+        }
+    },
+
+    "exercises": {
+        "userId": {
+            "exercise-name": {
+                "type":"string"
+            }
+        }
+    },
+
+    "sessions": {
+        "userId": {
+            "sessionId": {
+                "workout":"string",
+                "dateCompleted":"time since 1970",//If null then the session is not complete      
+                "exercises": {
+                    "exerciseName":{
+                        "order":1, // required
+                        "type":"string",
+                        "setsNeeded":3,// Nullable
+                        "repsNeeded":2,// Nullable
+                        "targetDuration":"hh:mm:ss",// Nullable
+                        "targetDistance":"1.45",// Nullable [miles]
+                        "duration":"hh:mm:ss", // Nullable
+                        "distance":"1.45", // Nullable [miles]
+                        "sets": [ // Nullable
+                            {
+                                "order": 1,
+                                "reps": 10,
+                                "weight": 150
+                            }
+                        ]
+                    }
+
+                }
+            }
+        }
+    },
+
+    "schedule": {
+        "userId": {
+            "sun": {
+                "workoutId":"id"
+            },
+            "tue":{
+                "workoutId":"id"
+            }
+        }
+    }
+
+
+}
