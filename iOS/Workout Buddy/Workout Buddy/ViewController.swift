@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    var ref: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        ref = FIRDatabase.database().reference()
+        
+        ref.child("test").removeValue()
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,6 +12,13 @@
 		08B7A7A31DE11FFA008CD626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A11DE11FFA008CD626 /* Main.storyboard */; };
 		08B7A7A51DE11FFA008CD626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A41DE11FFA008CD626 /* Assets.xcassets */; };
 		08B7A7A81DE11FFA008CD626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A61DE11FFA008CD626 /* LaunchScreen.storyboard */; };
+		08B7A7CF1DE1E44E008CD626 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7CE1DE1E44E008CD626 /* Exercise.swift */; };
+		08B7A7D11DE1EBC5008CD626 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D01DE1EBC5008CD626 /* Workout.swift */; };
+		08B7A7D31DE1F359008CD626 /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */; };
+		08B7A7D51DE1F538008CD626 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D41DE1F538008CD626 /* Set.swift */; };
+		08B7A7D71DE3BF66008CD626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */; };
+		08B7A7D91DE3CDF7008CD626 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D81DE3CDF7008CD626 /* Session.swift */; };
+		610F3EAE8CAF4780FD8828B0 /* Pods_Workout_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		08B7A7A41DE11FFA008CD626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B7A7A71DE11FFA008CD626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B7A7A91DE11FFA008CD626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B7A7CE1DE1E44E008CD626 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		08B7A7D01DE1EBC5008CD626 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutExercise.swift; sourceTree = "<group>"; };
+		08B7A7D41DE1F538008CD626 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08B7A7D81DE3CDF7008CD626 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610F3EAE8CAF4780FD8828B0 /* Pods_Workout_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +55,11 @@
 		08B7A7911DE11FFA008CD626 = {
 			isa = PBXGroup;
 			children = (
+				08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */,
 				08B7A79C1DE11FFA008CD626 /* Workout Buddy */,
 				08B7A79B1DE11FFA008CD626 /* Products */,
+				616B960FB12829BF4B18794C /* Pods */,
+				34289F3B65653AB371DF945C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +76,42 @@
 			children = (
 				08B7A79D1DE11FFA008CD626 /* AppDelegate.swift */,
 				08B7A79F1DE11FFA008CD626 /* ViewController.swift */,
+				08B7A7CD1DE12DF8008CD626 /* Models */,
 				08B7A7A11DE11FFA008CD626 /* Main.storyboard */,
+				08B7A7D41DE1F538008CD626 /* Set.swift */,
+				08B7A7D81DE3CDF7008CD626 /* Session.swift */,
 				08B7A7A41DE11FFA008CD626 /* Assets.xcassets */,
 				08B7A7A61DE11FFA008CD626 /* LaunchScreen.storyboard */,
 				08B7A7A91DE11FFA008CD626 /* Info.plist */,
 			);
 			path = "Workout Buddy";
+			sourceTree = "<group>";
+		};
+		08B7A7CD1DE12DF8008CD626 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08B7A7CE1DE1E44E008CD626 /* Exercise.swift */,
+				08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */,
+				08B7A7D01DE1EBC5008CD626 /* Workout.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		34289F3B65653AB371DF945C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		616B960FB12829BF4B18794C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */,
+				C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08B7A7AC1DE11FFA008CD626 /* Build configuration list for PBXNativeTarget "Workout Buddy" */;
 			buildPhases = (
+				0BDC10A8F8D42FF4D2A0D07D /* [CP] Check Pods Manifest.lock */,
 				08B7A7961DE11FFA008CD626 /* Sources */,
 				08B7A7971DE11FFA008CD626 /* Frameworks */,
 				08B7A7981DE11FFA008CD626 /* Resources */,
+				3E819EF536220EBD249A4EAA /* [CP] Embed Pods Frameworks */,
+				EA34FF8E24AEA76ACBD6E1BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B7A7A81DE11FFA008CD626 /* LaunchScreen.storyboard in Resources */,
+				08B7A7D71DE3BF66008CD626 /* GoogleService-Info.plist in Resources */,
 				08B7A7A51DE11FFA008CD626 /* Assets.xcassets in Resources */,
 				08B7A7A31DE11FFA008CD626 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +186,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BDC10A8F8D42FF4D2A0D07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E819EF536220EBD249A4EAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA34FF8E24AEA76ACBD6E1BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08B7A7961DE11FFA008CD626 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B7A7D91DE3CDF7008CD626 /* Session.swift in Sources */,
 				08B7A7A01DE11FFA008CD626 /* ViewController.swift in Sources */,
+				08B7A7D31DE1F359008CD626 /* WorkoutExercise.swift in Sources */,
+				08B7A7D51DE1F538008CD626 /* Set.swift in Sources */,
 				08B7A79E1DE11FFA008CD626 /* AppDelegate.swift in Sources */,
+				08B7A7CF1DE1E44E008CD626 /* Exercise.swift in Sources */,
+				08B7A7D11DE1EBC5008CD626 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +364,7 @@
 		};
 		08B7A7AD1DE11FFA008CD626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L35UPK3UXC;
@@ -270,6 +378,7 @@
 		};
 		08B7A7AE1DE11FFA008CD626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L35UPK3UXC;
@@ -300,6 +409,7 @@
 				08B7A7AE1DE11FFA008CD626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
