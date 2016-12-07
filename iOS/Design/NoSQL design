@@ -41,14 +41,14 @@
                 "targetDuration":"hh:mm:ss",// Nullable
                 "targetDistance":"1.45",// Nullable [miles]
                 "duration":"hh:mm:ss", // Nullable
-                        "distance":"1.45", // Nullable [miles]
-                        "sets": [ // Nullable
-                            {
-                                "order": 1,
-                                "reps": 10,
-                                "weight": 150
-                            }
-                        ]
+                "distance":"1.45", // Nullable [miles]
+                "sets": [ // Nullable
+                    {
+                        "order": 1,
+                        "reps": 10,
+                        "weight": 150
+                    }
+                ]
             } 
         }
     },
