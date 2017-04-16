@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>Database design</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="31579f9b-53d1-45b3-92b3-f059b1826197" name="user" objectType="TABLE" physicalName="user" >
+   <remarks>The current logged in user</remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="22151b0e-a8f3-492d-af69-e630f366e32e" autoIncrement="false" autoIncrementSequenceName="user_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="751a509a-71e8-46e9-ba1b-05c3b0c5825d" autoIncrement="false" autoIncrementSequenceName="user_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>The email which will also be used for logging in.
+
+UNIQUE</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX4" populated="true" UUID="2289f313-eeb0-4d3d-8936-fad45a812b33" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC5" populated="true" UUID="449891dd-6d86-45f3-a1ea-69b7014a1da6" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB6" populated="true" UUID="f1d51250-9529-44d1-b857-18c7b8ca524e" name="exercise" objectType="TABLE" physicalName="exercise" >
+   <remarks>A exercise. This is a record of the name and type of an exercise along with any other notes about the exercise.
+
+The main purpose of this is to allow the system to know what to expect as data and to tell the app what to show for input fields.</remarks>
+   <folder id="FOLTAB61" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL7" populated="true" UUID="af264199-a383-4350-a466-e302b6b0498c" autoIncrement="false" autoIncrementSequenceName="exercise_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="9c2ed77d-7fe6-4829-9eb3-92103b3638a7" autoIncrement="false" autoIncrementSequenceName="exercise_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>The name of the exercise</remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="f69dcf81-1fca-433d-b016-513446d26d9d" autoIncrement="false" autoIncrementSequenceName="exercise_type_seq" defaultValue="" name="type" nullable="0" physicalName="type" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>The type of exercise
+
+Current values include:
+Cardio
+Lift
+Stretch
+
+Stretch includes yoga positions</remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="53f24a7b-74bd-410c-ba06-5f9a205c8e62" autoIncrement="false" autoIncrementSequenceName="exercise_note_seq" defaultValue="" name="note" nullable="1" physicalName="note" precision="300" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>A note about this specific exercise.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB63" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB62" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB64" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX11" populated="true" UUID="7a1c0c8b-bdfe-4c7c-bed6-81191686c4f5" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC12" populated="true" UUID="d1de70d5-f35c-4f25-ad96-1d2d59e79c33" ascendingOrDescending="UNSPECIFIED" column-ref="COL7" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB13" populated="true" UUID="5dc78a71-f33d-4dd9-955e-5618b930d20f" name="workout" objectType="TABLE" physicalName="workout" >
+   <remarks>A workout.
+
+This is just the name of the workout to be used for the lookup tables</remarks>
+   <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL14" populated="true" UUID="18ac0eec-122d-4da1-9113-887fb29544f4" autoIncrement="true" autoIncrementSequenceName="workout_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="df57d61b-bd89-48ef-870f-6cbb521458d9" autoIncrement="false" autoIncrementSequenceName="workout_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB133" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB132" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB134" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX16" populated="true" UUID="05869c78-9e5e-47bf-95b0-1d2615d41b6c" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC17" populated="true" UUID="a2508702-d6ec-4814-8ea0-e3b03a576f50" ascendingOrDescending="UNSPECIFIED" column-ref="COL14" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB18" populated="true" UUID="230a2b73-b0bd-4128-950c-3fb32f26fbb1" name="exercise_requirements" objectType="TABLE" physicalName="exercise_requirements" >
+   <remarks>The requirements for an exercise that is attached to a workout.</remarks>
+   <folder id="FOLTAB181" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL19" populated="true" UUID="d34cd3a9-93f2-43c3-9f94-cf7f05da76a0" autoIncrement="true" autoIncrementSequenceName="exercise_requirements_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="daddfb92-1eac-40cc-85ee-25cb1e73e8e5" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_workout_id_seq" defaultValue="" name="workout_id" nullable="0" physicalName="workout_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="21151df8-381a-44f8-98c8-2b43502336f6" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_exercise_id_seq" defaultValue="" name="exercise_id" nullable="0" physicalName="exercise_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="8eaf1e66-e65a-4b8f-9134-2e52dd911f88" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_list_order_seq" defaultValue="" name="list_order" nullable="0" physicalName="list_order" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>The order index that this requirement should be shown within a specific workout.
+</remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="abe8deb9-90a7-4e4c-a320-889cdace02b2" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_target_sets_seq" defaultValue="" name="target_sets" nullable="1" physicalName="target_sets" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="012b69eb-4eaa-4f78-80bc-ce60a63a190d" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_target_reps_seq" defaultValue="" name="target_reps" nullable="1" physicalName="target_reps" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="4d2dc896-1550-4c58-987a-a77cd5e80080" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_target_weight_seq" defaultValue="" name="target_weight" nullable="1" physicalName="target_weight" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks>Weight is represented in lb&apos;s</remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="6faeab06-f0cc-4bc3-b850-f7088ebecf9a" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_target_duration_seq" defaultValue="" name="target_duration" nullable="1" physicalName="target_duration" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="4bc88cb2-e7fe-4130-bc58-eea14465a538" autoIncrement="false" autoIncrementSequenceName="exercise_requirements_target_distance_seq" defaultValue="" name="target_distance" nullable="1" physicalName="target_distance" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB183" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB182" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB184" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX28" populated="true" UUID="35cec3d9-d3ad-487c-ae80-2db0ea887a5c" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC29" populated="true" UUID="5d973fb8-2b11-4b13-8c48-b6d38594cd95" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB30" populated="true" UUID="64944c37-7072-4a50-967a-77e61242b1c1" name="exercise_record" objectType="TABLE" physicalName="exercise_record" >
+   <remarks>This is a record of an exercise. This is the main item used for statistical analysis.
+
+NOTE: this may or may not be finalized on the mobile device if this exercise record is attached to an incomplete session_exercise record. All exercise_records MUST be completed before sending them to the database</remarks>
+   <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL31" populated="true" UUID="6cdc9850-1333-43ea-97d6-2f16e7a537b3" autoIncrement="false" autoIncrementSequenceName="exercise_record_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="e2e645b8-9b64-4309-8807-a365b5ba452a" autoIncrement="false" autoIncrementSequenceName="exercise_record_exercise_id_seq" defaultValue="" name="exercise_id" nullable="0" physicalName="exercise_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="1147443d-0320-4c47-9229-ab30e9626b81" autoIncrement="false" autoIncrementSequenceName="exercise_record_duration_seq" defaultValue="" name="duration" nullable="1" physicalName="duration" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="ca06f42b-90c7-4c35-a943-6e318f2e9ef6" autoIncrement="false" autoIncrementSequenceName="exercise_record_distance_seq" defaultValue="" name="distance" nullable="1" physicalName="distance" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="9da08401-a0b3-4f80-b058-2fec0fb151d3" autoIncrement="false" autoIncrementSequenceName="exercise_record_start_date_seq" defaultValue="" name="start_date" nullable="0" physicalName="start_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ISO-formatted date</remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="a330773b-4038-4050-b7c4-5c7c45a144b9" autoIncrement="false" autoIncrementSequenceName="exercise_record_end_date_seq" defaultValue="" name="end_date" nullable="0" physicalName="end_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ISO-formatted date</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB303" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX37" populated="true" UUID="c6067897-0fdb-4441-8f78-c1bc7195d9a0" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC38" populated="true" UUID="a33c1807-4c10-455c-b2ed-0ffa4787e8b7" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB39" populated="true" UUID="5b2f8e0b-057b-4583-aa17-4ba19d83acc7" name="session" objectType="TABLE" physicalName="session" >
+   <remarks>This represents doing a workout once. So a workout session.</remarks>
+   <folder id="FOLTAB391" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL40" populated="true" UUID="33a2bc8e-28c9-4525-b192-ae18ef914a34" autoIncrement="false" autoIncrementSequenceName="session_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="ef6c64b2-d14c-4267-91c5-11fdf0ca3396" autoIncrement="false" autoIncrementSequenceName="session_workout_id_seq" defaultValue="" name="workout_id" nullable="0" physicalName="workout_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL42" populated="true" UUID="806675fd-fbfe-4ac6-82bd-640bbf96ab4d" autoIncrement="false" autoIncrementSequenceName="session_start_date_seq" defaultValue="" name="start_date" nullable="0" physicalName="start_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ISO-formatted date</remarks>
+    </column>
+    <column id="COL43" populated="true" UUID="019923d7-2458-4909-9f72-3265e6d0f789" autoIncrement="false" autoIncrementSequenceName="session_end_date_seq" defaultValue="" name="end_date" nullable="0" physicalName="end_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ISO-formatted date</remarks>
+    </column>
+    <column id="COL44" populated="true" UUID="8dda2361-b012-41bb-9e9d-282dca4c9861" autoIncrement="false" autoIncrementSequenceName="session_is_completed_seq" defaultValue="" name="is_completed" nullable="0" physicalName="is_completed" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
+     <remarks>Whether or not this session is fully completed.
+
+ALL sessions MUST be completed before sending to the server (for now)
+</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB393" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB392" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX45" populated="true" UUID="66075526-b005-4a19-aad7-6cc254f987da" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC46" populated="true" UUID="ed005cd6-8ad6-4968-a69e-a86f987835f6" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB47" populated="true" UUID="fb41a668-b869-4248-867d-66c392072c1b" name="session_exercise" objectType="TABLE" physicalName="session_exercise" >
+   <remarks>Lookup table between a workout session and an exercise record.</remarks>
+   <folder id="FOLTAB471" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL48" populated="true" UUID="6f3aad8c-a64e-4a72-824e-46c6f79dba5d" autoIncrement="false" autoIncrementSequenceName="session_exercise_session_id_seq" defaultValue="" name="session_id" nullable="0" physicalName="session_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="4511ac56-2609-4b4c-aa87-497df0312670" autoIncrement="false" autoIncrementSequenceName="session_exercise_exercise_record_id_seq" defaultValue="" name="exercise_record_id" nullable="0" physicalName="exercise_record_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="f9563cef-db55-4a82-a978-2f53fbc47b5d" autoIncrement="false" autoIncrementSequenceName="session_exercise_is_completed_seq" defaultValue="" name="is_completed" nullable="0" physicalName="is_completed" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB473" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB472" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB474" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX51" populated="true" UUID="ad0f6f95-4842-47e4-96ac-b17448d3ab32" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB52" populated="true" UUID="7770971d-2ecd-45db-8657-9ee0eaad76be" name="workout_session" objectType="TABLE" physicalName="workout_session" >
+   <remarks>Lookup table between a workout and a session</remarks>
+   <folder id="FOLTAB521" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL53" populated="true" UUID="e4665281-f67d-4328-bb93-ab3b81accc3a" autoIncrement="false" autoIncrementSequenceName="workout_session_workout_id_seq" defaultValue="" name="workout_id" nullable="0" physicalName="workout_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="af44120b-8465-4e57-82fa-6814a6e34218" autoIncrement="false" autoIncrementSequenceName="workout_session_session_id_seq" defaultValue="" name="session_id" nullable="0" physicalName="session_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB523" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB522" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB524" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX55" populated="true" UUID="12d6108b-0270-4b55-b415-1e1d3e69947b" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB56" populated="true" UUID="ccb53384-1853-4f66-be97-18e743d7e357" name="workout_exercise_requirements" objectType="TABLE" physicalName="workout_exercise_requirements" >
+   <remarks>Lookup table between a workout and exercise requirements for a specific exercise.</remarks>
+   <folder id="FOLTAB561" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL57" populated="true" UUID="8fb5bf89-9987-4cbb-88a3-90d5888df76e" autoIncrement="false" autoIncrementSequenceName="workout_exercise_requirements_workout_id_seq" defaultValue="" name="workout_id" nullable="0" physicalName="workout_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL58" populated="true" UUID="f4ecd27c-c54c-44b7-944e-bb3001c46d4a" autoIncrement="false" autoIncrementSequenceName="workout_exercise_requirements_exercise_requirement_id_seq" defaultValue="" name="exercise_requirement_id" nullable="0" physicalName="exercise_requirement_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB563" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB562" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB564" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX59" populated="true" UUID="d413426e-56f5-4b69-840c-116fe7023e59" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB60" populated="true" UUID="125a21cf-0710-49b7-96fe-331a6f6f3cfc" name="schedule" objectType="TABLE" physicalName="schedule" >
+   <remarks>The workout schedule for the app</remarks>
+   <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL61" populated="true" UUID="421d488b-72ae-4038-b40b-7ecdaf71e1bf" autoIncrement="false" autoIncrementSequenceName="schedule_day_of_week_seq" defaultValue="" name="day_of_week" nullable="0" physicalName="day_of_week" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>The day of the week in &quot;choices&quot; within postgres
+
+Sun-&gt; Sat == (0-6)
+
+</remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="8d56f989-acb5-4faf-89d7-37b40f948dfa" autoIncrement="false" autoIncrementSequenceName="schedule_workout_id_seq" defaultValue="" name="workout_id" nullable="0" physicalName="workout_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB603" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB604" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX63" populated="true" UUID="f6d7c14d-cedb-411c-9691-30259969f485" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB64" populated="true" UUID="a4f0cf69-fec7-48fd-8ca0-727046237523" name="set_record" objectType="TABLE" physicalName="set_record" >
+   <remarks>These are completed sets for a &quot;Lift&quot; exercise.</remarks>
+   <folder id="FOLTAB641" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL65" populated="true" UUID="c2ca7d7e-d4fd-4813-86e5-bcdfa0649c92" autoIncrement="true" autoIncrementSequenceName="set_record_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL66" populated="true" UUID="7125ed3d-52aa-4fd7-9826-feb1e2bac0f2" autoIncrement="false" autoIncrementSequenceName="set_record_exercise_id_seq" defaultValue="" name="exercise_id" nullable="0" physicalName="exercise_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="8a6e41cd-9e69-4c0a-a73f-ae68298b8a0f" autoIncrement="false" autoIncrementSequenceName="set_record_num_reps_seq" defaultValue="" name="num_reps" nullable="0" physicalName="num_reps" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="e89f0d0a-3f93-4b02-9912-a3a1251e54b4" autoIncrement="false" autoIncrementSequenceName="set_record_weight_seq" defaultValue="" name="weight" nullable="0" physicalName="weight" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks>Weight is represented in lb&apos;s</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB643" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB642" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB644" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX69" populated="true" UUID="019ad587-407d-456b-a54e-afd0dc108d8a" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC70" populated="true" UUID="27b64be6-abfb-47d0-8697-4080e486cfd2" ascendingOrDescending="UNSPECIFIED" column-ref="COL65" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="128" y="73" bgColor="0xbfd6ff" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB6" x="43" y="234" bgColor="0xe8cfdb" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB13" x="325" y="236" bgColor="0xe8cfdb" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB18" x="44" y="376" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB30" x="36" y="578" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB39" x="677" y="241" bgColor="0xc7d0df" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB47" x="678" y="384" bgColor="0xfbdabb" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB52" x="325" y="339" bgColor="0xfbdabb" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB56" x="322" y="446" bgColor="0xfbdabb" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB60" x="596" y="67" bgColor="0xb9bbf6" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB64" x="494" y="598" bgColor="0xf6bcbc" fgColor="0x000000" rounded="true" dashed="false"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

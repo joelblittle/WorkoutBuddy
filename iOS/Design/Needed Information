@@ -8,14 +8,14 @@ Workout:
             target distance:
         Exercise3: (Stretch)
             target duration:
-Exercise
+Exercise: (general information on an exercise. Does not include requirements)
     name:
     type: (Cardio, Lift, Stretch)
     sets: (list of sets)
     duration:
     distance:
 
-
+Workout Exercise: (activity linked to a workout using a specific exercise.)
     sets needed:
     sets performed:
     reps needed:
