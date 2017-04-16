@@ -7,126 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B7A79E1DE11FFA008CD626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A79D1DE11FFA008CD626 /* AppDelegate.swift */; };
-		08B7A7A31DE11FFA008CD626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A11DE11FFA008CD626 /* Main.storyboard */; };
-		08B7A7A51DE11FFA008CD626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A41DE11FFA008CD626 /* Assets.xcassets */; };
-		08B7A7A81DE11FFA008CD626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7A61DE11FFA008CD626 /* LaunchScreen.storyboard */; };
-		08B7A7CF1DE1E44E008CD626 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7CE1DE1E44E008CD626 /* Exercise.swift */; };
-		08B7A7D11DE1EBC5008CD626 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D01DE1EBC5008CD626 /* Workout.swift */; };
-		08B7A7D31DE1F359008CD626 /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */; };
-		08B7A7D51DE1F538008CD626 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D41DE1F538008CD626 /* Set.swift */; };
-		08B7A7D71DE3BF66008CD626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */; };
-		08B7A7D91DE3CDF7008CD626 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7A7D81DE3CDF7008CD626 /* Session.swift */; };
-		08DC3D101DF87F7700894295 /* ExercisesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC3D0F1DF87F7700894295 /* ExercisesController.swift */; };
-		610F3EAE8CAF4780FD8828B0 /* Pods_Workout_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */; };
+		081CCD641EA4010800E0E69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081CCD631EA4010800E0E69B /* AppDelegate.swift */; };
+		081CCD691EA4010800E0E69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081CCD671EA4010800E0E69B /* Main.storyboard */; };
+		081CCD6B1EA4010800E0E69B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081CCD6A1EA4010800E0E69B /* Assets.xcassets */; };
+		081CCD6E1EA4010800E0E69B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081CCD6C1EA4010800E0E69B /* LaunchScreen.storyboard */; };
+		081CCD781EA4025400E0E69B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081CCD771EA4025400E0E69B /* DashboardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08B7A79A1DE11FFA008CD626 /* Workout Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08B7A79D1DE11FFA008CD626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08B7A7A21DE11FFA008CD626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08B7A7A41DE11FFA008CD626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		08B7A7A71DE11FFA008CD626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		08B7A7A91DE11FFA008CD626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08B7A7CE1DE1E44E008CD626 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		08B7A7D01DE1EBC5008CD626 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutExercise.swift; sourceTree = "<group>"; };
-		08B7A7D41DE1F538008CD626 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
-		08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		08B7A7D81DE3CDF7008CD626 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		08DC3D0F1DF87F7700894295 /* ExercisesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesController.swift; sourceTree = "<group>"; };
-		1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy.debug.xcconfig"; sourceTree = "<group>"; };
-		7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy.release.xcconfig"; sourceTree = "<group>"; };
+		081CCD601EA4010800E0E69B /* Workout Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081CCD631EA4010800E0E69B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		081CCD681EA4010800E0E69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		081CCD6A1EA4010800E0E69B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081CCD6D1EA4010800E0E69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081CCD6F1EA4010800E0E69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081CCD771EA4025400E0E69B /* DashboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		08B7A7971DE11FFA008CD626 /* Frameworks */ = {
+		081CCD5D1EA4010800E0E69B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610F3EAE8CAF4780FD8828B0 /* Pods_Workout_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08B7A7911DE11FFA008CD626 = {
+		081CCD571EA4010800E0E69B = {
 			isa = PBXGroup;
 			children = (
-				08B7A7D61DE3BF66008CD626 /* GoogleService-Info.plist */,
-				08B7A79C1DE11FFA008CD626 /* Workout Buddy */,
-				08B7A79B1DE11FFA008CD626 /* Products */,
-				616B960FB12829BF4B18794C /* Pods */,
-				34289F3B65653AB371DF945C /* Frameworks */,
+				081CCD621EA4010800E0E69B /* Workout Buddy */,
+				081CCD611EA4010800E0E69B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		08B7A79B1DE11FFA008CD626 /* Products */ = {
+		081CCD611EA4010800E0E69B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08B7A79A1DE11FFA008CD626 /* Workout Buddy.app */,
+				081CCD601EA4010800E0E69B /* Workout Buddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		08B7A79C1DE11FFA008CD626 /* Workout Buddy */ = {
+		081CCD621EA4010800E0E69B /* Workout Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				08B7A79D1DE11FFA008CD626 /* AppDelegate.swift */,
-				08DC3D0F1DF87F7700894295 /* ExercisesController.swift */,
-				08B7A7CD1DE12DF8008CD626 /* Models */,
-				08B7A7A11DE11FFA008CD626 /* Main.storyboard */,
-				08B7A7D41DE1F538008CD626 /* Set.swift */,
-				08B7A7D81DE3CDF7008CD626 /* Session.swift */,
-				08B7A7A41DE11FFA008CD626 /* Assets.xcassets */,
-				08B7A7A61DE11FFA008CD626 /* LaunchScreen.storyboard */,
-				08B7A7A91DE11FFA008CD626 /* Info.plist */,
+				081CCD631EA4010800E0E69B /* AppDelegate.swift */,
+				081CCD761EA4019F00E0E69B /* Models */,
+				081CCD751EA4019700E0E69B /* ViewControllers */,
+				081CCD671EA4010800E0E69B /* Main.storyboard */,
+				081CCD6A1EA4010800E0E69B /* Assets.xcassets */,
+				081CCD6C1EA4010800E0E69B /* LaunchScreen.storyboard */,
+				081CCD6F1EA4010800E0E69B /* Info.plist */,
 			);
 			path = "Workout Buddy";
 			sourceTree = "<group>";
 		};
-		08B7A7CD1DE12DF8008CD626 /* Models */ = {
+		081CCD751EA4019700E0E69B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				08B7A7CE1DE1E44E008CD626 /* Exercise.swift */,
-				08B7A7D21DE1F359008CD626 /* WorkoutExercise.swift */,
-				08B7A7D01DE1EBC5008CD626 /* Workout.swift */,
+				081CCD771EA4025400E0E69B /* DashboardController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		081CCD761EA4019F00E0E69B /* Models */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		34289F3B65653AB371DF945C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B1ABA65D66982CEF286BDAB /* Pods_Workout_Buddy.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		616B960FB12829BF4B18794C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */,
-				C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08B7A7991DE11FFA008CD626 /* Workout Buddy */ = {
+		081CCD5F1EA4010800E0E69B /* Workout Buddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08B7A7AC1DE11FFA008CD626 /* Build configuration list for PBXNativeTarget "Workout Buddy" */;
+			buildConfigurationList = 081CCD721EA4010800E0E69B /* Build configuration list for PBXNativeTarget "Workout Buddy" */;
 			buildPhases = (
-				0BDC10A8F8D42FF4D2A0D07D /* [CP] Check Pods Manifest.lock */,
-				08B7A7961DE11FFA008CD626 /* Sources */,
-				08B7A7971DE11FFA008CD626 /* Frameworks */,
-				08B7A7981DE11FFA008CD626 /* Resources */,
-				3E819EF536220EBD249A4EAA /* [CP] Embed Pods Frameworks */,
-				EA34FF8E24AEA76ACBD6E1BC /* [CP] Copy Pods Resources */,
+				081CCD5C1EA4010800E0E69B /* Sources */,
+				081CCD5D1EA4010800E0E69B /* Frameworks */,
+				081CCD5E1EA4010800E0E69B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -134,27 +97,27 @@
 			);
 			name = "Workout Buddy";
 			productName = "Workout Buddy";
-			productReference = 08B7A79A1DE11FFA008CD626 /* Workout Buddy.app */;
+			productReference = 081CCD601EA4010800E0E69B /* Workout Buddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		08B7A7921DE11FFA008CD626 /* Project object */ = {
+		081CCD581EA4010800E0E69B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Robert Barber";
 				TargetAttributes = {
-					08B7A7991DE11FFA008CD626 = {
-						CreatedOnToolsVersion = 8.1;
+					081CCD5F1EA4010800E0E69B = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L35UPK3UXC;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 08B7A7951DE11FFA008CD626 /* Build configuration list for PBXProject "Workout Buddy" */;
+			buildConfigurationList = 081CCD5B1EA4010800E0E69B /* Build configuration list for PBXProject "Workout Buddy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,108 +125,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 08B7A7911DE11FFA008CD626;
-			productRefGroup = 08B7A79B1DE11FFA008CD626 /* Products */;
+			mainGroup = 081CCD571EA4010800E0E69B;
+			productRefGroup = 081CCD611EA4010800E0E69B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08B7A7991DE11FFA008CD626 /* Workout Buddy */,
+				081CCD5F1EA4010800E0E69B /* Workout Buddy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		08B7A7981DE11FFA008CD626 /* Resources */ = {
+		081CCD5E1EA4010800E0E69B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B7A7A81DE11FFA008CD626 /* LaunchScreen.storyboard in Resources */,
-				08B7A7D71DE3BF66008CD626 /* GoogleService-Info.plist in Resources */,
-				08B7A7A51DE11FFA008CD626 /* Assets.xcassets in Resources */,
-				08B7A7A31DE11FFA008CD626 /* Main.storyboard in Resources */,
+				081CCD6E1EA4010800E0E69B /* LaunchScreen.storyboard in Resources */,
+				081CCD6B1EA4010800E0E69B /* Assets.xcassets in Resources */,
+				081CCD691EA4010800E0E69B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0BDC10A8F8D42FF4D2A0D07D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3E819EF536220EBD249A4EAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA34FF8E24AEA76ACBD6E1BC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workout Buddy/Pods-Workout Buddy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		08B7A7961DE11FFA008CD626 /* Sources */ = {
+		081CCD5C1EA4010800E0E69B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B7A7D91DE3CDF7008CD626 /* Session.swift in Sources */,
-				08B7A7D31DE1F359008CD626 /* WorkoutExercise.swift in Sources */,
-				08DC3D101DF87F7700894295 /* ExercisesController.swift in Sources */,
-				08B7A7D51DE1F538008CD626 /* Set.swift in Sources */,
-				08B7A79E1DE11FFA008CD626 /* AppDelegate.swift in Sources */,
-				08B7A7CF1DE1E44E008CD626 /* Exercise.swift in Sources */,
-				08B7A7D11DE1EBC5008CD626 /* Workout.swift in Sources */,
+				081CCD781EA4025400E0E69B /* DashboardController.swift in Sources */,
+				081CCD641EA4010800E0E69B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		08B7A7A11DE11FFA008CD626 /* Main.storyboard */ = {
+		081CCD671EA4010800E0E69B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				08B7A7A21DE11FFA008CD626 /* Base */,
+				081CCD681EA4010800E0E69B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		08B7A7A61DE11FFA008CD626 /* LaunchScreen.storyboard */ = {
+		081CCD6C1EA4010800E0E69B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				08B7A7A71DE11FFA008CD626 /* Base */,
+				081CCD6D1EA4010800E0E69B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -271,7 +180,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		08B7A7AA1DE11FFA008CD626 /* Debug */ = {
+		081CCD701EA4010800E0E69B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +198,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -311,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -320,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		08B7A7AB1DE11FFA008CD626 /* Release */ = {
+		081CCD711EA4010800E0E69B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,7 +247,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -354,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -362,9 +271,8 @@
 			};
 			name = Release;
 		};
-		08B7A7AD1DE11FFA008CD626 /* Debug */ = {
+		081CCD731EA4010800E0E69B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1921E6DEDF3235F6C455A620 /* Pods-Workout Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L35UPK3UXC;
@@ -376,9 +284,8 @@
 			};
 			name = Debug;
 		};
-		08B7A7AE1DE11FFA008CD626 /* Release */ = {
+		081CCD741EA4010800E0E69B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9588B922F738136CA898736 /* Pods-Workout Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L35UPK3UXC;
@@ -393,25 +300,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08B7A7951DE11FFA008CD626 /* Build configuration list for PBXProject "Workout Buddy" */ = {
+		081CCD5B1EA4010800E0E69B /* Build configuration list for PBXProject "Workout Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08B7A7AA1DE11FFA008CD626 /* Debug */,
-				08B7A7AB1DE11FFA008CD626 /* Release */,
+				081CCD701EA4010800E0E69B /* Debug */,
+				081CCD711EA4010800E0E69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08B7A7AC1DE11FFA008CD626 /* Build configuration list for PBXNativeTarget "Workout Buddy" */ = {
+		081CCD721EA4010800E0E69B /* Build configuration list for PBXNativeTarget "Workout Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08B7A7AD1DE11FFA008CD626 /* Debug */,
-				08B7A7AE1DE11FFA008CD626 /* Release */,
+				081CCD731EA4010800E0E69B /* Debug */,
+				081CCD741EA4010800E0E69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 08B7A7921DE11FFA008CD626 /* Project object */;
+	rootObject = 081CCD581EA4010800E0E69B /* Project object */;
 }

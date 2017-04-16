@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "081CCD5F1EA4010800E0E69B"
+               BlueprintIdentifier = "08B7A7991DE11FFA008CD626"
                BuildableName = "Workout Buddy.app"
                BlueprintName = "Workout Buddy"
                ReferencedContainer = "container:Workout Buddy.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "081CCD5F1EA4010800E0E69B"
+            BlueprintIdentifier = "08B7A7991DE11FFA008CD626"
             BuildableName = "Workout Buddy.app"
             BlueprintName = "Workout Buddy"
             ReferencedContainer = "container:Workout Buddy.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "081CCD5F1EA4010800E0E69B"
+            BlueprintIdentifier = "08B7A7991DE11FFA008CD626"
             BuildableName = "Workout Buddy.app"
             BlueprintName = "Workout Buddy"
             ReferencedContainer = "container:Workout Buddy.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "081CCD5F1EA4010800E0E69B"
+            BlueprintIdentifier = "08B7A7991DE11FFA008CD626"
             BuildableName = "Workout Buddy.app"
             BlueprintName = "Workout Buddy"
             ReferencedContainer = "container:Workout Buddy.xcodeproj">

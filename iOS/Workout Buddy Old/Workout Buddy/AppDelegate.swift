@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  Workout Buddy
 //
-//  Created by Robert Barber on 4/16/17.
-//  Copyright © 2017 Robert Barber. All rights reserved.
+//  Created by Robert Barber on 11/19/16.
+//  Copyright © 2016 Robert Barber. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        FIRDatabase.database().persistenceEnabled = true
+        
         return true
     }
 
